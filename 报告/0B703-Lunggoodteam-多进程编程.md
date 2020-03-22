@@ -65,10 +65,10 @@ Linux提供了几十种信号，分别代表着不同的意义。信号之间依
 
 ### 4、编写相应处理程序
 #### 1)主程序
-![2_3](https://github.com/sanbailu360/Lunggoodteam/blob/master/screencut/HW2/2.3.png)
-
 ![2_4](https://github.com/sanbailu360/Lunggoodteam/blob/master/screencut/HW2/2.4.png)
-#### 2)运行结果
+
 ![2_5](https://github.com/sanbailu360/Lunggoodteam/blob/master/screencut/HW2/2.5.png)
+#### 2)运行结果
+![2_6](https://github.com/sanbailu360/Lunggoodteam/blob/master/screencut/HW2/2.6.png)
 
 
