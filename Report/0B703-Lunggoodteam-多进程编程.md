@@ -35,11 +35,11 @@ fork()调用执行一次会返回2个值(考虑错误信息实际为3个值),如
 #### 1)pid_t fork(void)
 `pid_t vfork(void)`
 
-(https://github.com/Meleus/Lunggoodteam/blob/master/screencut/HW2/2_1.png)
+![2_1](https://github.com/Meleus/Lunggoodteam/blob/master/screencut/HW2/2_1.png)
 #### 2)先编译并运行fork()函数
-(https://github.com/Meleus/Lunggoodteam/blob/master/screencut/HW2/2_2.png)
+![2_2](https://github.com/Meleus/Lunggoodteam/blob/master/screencut/HW2/2_2.png)
 #### 3)再编译并运行vfork()函数
-(https://github.com/Meleus/Lunggoodteam/blob/master/screencut/HW2/2_3.png)
+![2_3](https://github.com/Meleus/Lunggoodteam/blob/master/screencut/HW2/2_3.png)
 ### 3、总结
 * fork()用于创建一个新进程。由fork()创建的子进程是父进程的副本。即子进程获取父进程数据空间，堆和 栈的副本。父子进程之间不共享这些存储空间的部分。而vfork()创建的进程并不将父进程的地址空间完全复制到子进程中，因为子进程会立即调用exec (或exit)于是也就不会存放该地址空间。相反，在子进程调用exec或exit之前，它在父进程的空间进行。
 * vfork()与fork()另一个区别就是：vfork保证子进程先运行，在调用exec或exit之前与父进程数据是共享的,在它调用exec或exit之后父进程才可能被调度运行。
